@@ -8,22 +8,27 @@
   <meta name="generator" content="slidify" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <link rel="stylesheet" href="http://slidifylibraries2.googlecode.com/git/inst/libraries/frameworks/io2012/css/default.css" media="all" >
-  <link rel="stylesheet" href="http://slidifylibraries2.googlecode.com/git/inst/libraries/frameworks/io2012/css/phone.css" 
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
     media="only screen and (max-device-width: 480px)" >
-  <link rel="stylesheet" href="http://slidifylibraries2.googlecode.com/git/inst/libraries/frameworks/io2012/css/slidify.css" >
-  <link rel="stylesheet" href="http://slidifylibraries2.googlecode.com/git/inst/libraries/highlighters/highlight.js/css/tomorrow.css" />
-  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/nvd3/css/nv.d3.css"></link>
+<link rel=stylesheet href="libraries/widgets/nvd3/css/rNVD3.css"></link>
 
   
   <!-- Grab CDN jQuery, fall back to local if offline -->
   <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
-  <script>window.jQuery || document.write('<script src="http://slidifylibraries2.googlecode.com/git/inst/libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
-  <script data-main="http://slidifylibraries2.googlecode.com/git/inst/libraries/frameworks/io2012/js/slides" 
-    src="http://slidifylibraries2.googlecode.com/git/inst/libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
   </script>
   
-  
+  <script src="libraries/widgets/nvd3/js/jquery-1.8.2.min.js"></script>
+<script src="libraries/widgets/nvd3/js/d3.v3.min.js"></script>
+<script src="libraries/widgets/nvd3/js/nv.d3.min-new.js"></script>
+<script src="libraries/widgets/nvd3/js/fisheye.js"></script>
+
 
 </head>
 <body style="opacity: 0">
@@ -67,7 +72,1123 @@
   <article data-timings="">
     <p>This is a scatter plot showing the general distribution of the data.</p>
 
-<iframe src=chart1.html seamless></iframe>
+<div id = 'charte9c735575b4' class = 'rChart nvd3'></div>
+
+<script type='text/javascript'>
+ $(document).ready(function(){
+      drawcharte9c735575b4()
+    });
+    function drawcharte9c735575b4(){  
+      var opts = {
+ "dom": "charte9c735575b4",
+"width":    800,
+"height":    400,
+"x": "Petal.Width",
+"y": "Petal.Length",
+"group": "Species",
+"type": "scatterChart",
+"id": "charte9c735575b4" 
+},
+        data = [
+ {
+ "Sepal.Length":            5.1,
+"Sepal.Width":            3.5,
+"Petal.Length":            1.4,
+"Petal.Width":            0.2,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            4.9,
+"Sepal.Width":              3,
+"Petal.Length":            1.4,
+"Petal.Width":            0.2,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            4.7,
+"Sepal.Width":            3.2,
+"Petal.Length":            1.3,
+"Petal.Width":            0.2,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            4.6,
+"Sepal.Width":            3.1,
+"Petal.Length":            1.5,
+"Petal.Width":            0.2,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":              5,
+"Sepal.Width":            3.6,
+"Petal.Length":            1.4,
+"Petal.Width":            0.2,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            5.4,
+"Sepal.Width":            3.9,
+"Petal.Length":            1.7,
+"Petal.Width":            0.4,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            4.6,
+"Sepal.Width":            3.4,
+"Petal.Length":            1.4,
+"Petal.Width":            0.3,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":              5,
+"Sepal.Width":            3.4,
+"Petal.Length":            1.5,
+"Petal.Width":            0.2,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            4.4,
+"Sepal.Width":            2.9,
+"Petal.Length":            1.4,
+"Petal.Width":            0.2,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            4.9,
+"Sepal.Width":            3.1,
+"Petal.Length":            1.5,
+"Petal.Width":            0.1,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            5.4,
+"Sepal.Width":            3.7,
+"Petal.Length":            1.5,
+"Petal.Width":            0.2,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            4.8,
+"Sepal.Width":            3.4,
+"Petal.Length":            1.6,
+"Petal.Width":            0.2,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            4.8,
+"Sepal.Width":              3,
+"Petal.Length":            1.4,
+"Petal.Width":            0.1,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            4.3,
+"Sepal.Width":              3,
+"Petal.Length":            1.1,
+"Petal.Width":            0.1,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            5.8,
+"Sepal.Width":              4,
+"Petal.Length":            1.2,
+"Petal.Width":            0.2,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            5.7,
+"Sepal.Width":            4.4,
+"Petal.Length":            1.5,
+"Petal.Width":            0.4,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            5.4,
+"Sepal.Width":            3.9,
+"Petal.Length":            1.3,
+"Petal.Width":            0.4,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            5.1,
+"Sepal.Width":            3.5,
+"Petal.Length":            1.4,
+"Petal.Width":            0.3,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            5.7,
+"Sepal.Width":            3.8,
+"Petal.Length":            1.7,
+"Petal.Width":            0.3,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            5.1,
+"Sepal.Width":            3.8,
+"Petal.Length":            1.5,
+"Petal.Width":            0.3,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            5.4,
+"Sepal.Width":            3.4,
+"Petal.Length":            1.7,
+"Petal.Width":            0.2,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            5.1,
+"Sepal.Width":            3.7,
+"Petal.Length":            1.5,
+"Petal.Width":            0.4,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            4.6,
+"Sepal.Width":            3.6,
+"Petal.Length":              1,
+"Petal.Width":            0.2,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            5.1,
+"Sepal.Width":            3.3,
+"Petal.Length":            1.7,
+"Petal.Width":            0.5,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            4.8,
+"Sepal.Width":            3.4,
+"Petal.Length":            1.9,
+"Petal.Width":            0.2,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":              5,
+"Sepal.Width":              3,
+"Petal.Length":            1.6,
+"Petal.Width":            0.2,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":              5,
+"Sepal.Width":            3.4,
+"Petal.Length":            1.6,
+"Petal.Width":            0.4,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            5.2,
+"Sepal.Width":            3.5,
+"Petal.Length":            1.5,
+"Petal.Width":            0.2,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            5.2,
+"Sepal.Width":            3.4,
+"Petal.Length":            1.4,
+"Petal.Width":            0.2,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            4.7,
+"Sepal.Width":            3.2,
+"Petal.Length":            1.6,
+"Petal.Width":            0.2,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            4.8,
+"Sepal.Width":            3.1,
+"Petal.Length":            1.6,
+"Petal.Width":            0.2,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            5.4,
+"Sepal.Width":            3.4,
+"Petal.Length":            1.5,
+"Petal.Width":            0.4,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            5.2,
+"Sepal.Width":            4.1,
+"Petal.Length":            1.5,
+"Petal.Width":            0.1,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            5.5,
+"Sepal.Width":            4.2,
+"Petal.Length":            1.4,
+"Petal.Width":            0.2,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            4.9,
+"Sepal.Width":            3.1,
+"Petal.Length":            1.5,
+"Petal.Width":            0.2,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":              5,
+"Sepal.Width":            3.2,
+"Petal.Length":            1.2,
+"Petal.Width":            0.2,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            5.5,
+"Sepal.Width":            3.5,
+"Petal.Length":            1.3,
+"Petal.Width":            0.2,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            4.9,
+"Sepal.Width":            3.6,
+"Petal.Length":            1.4,
+"Petal.Width":            0.1,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            4.4,
+"Sepal.Width":              3,
+"Petal.Length":            1.3,
+"Petal.Width":            0.2,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            5.1,
+"Sepal.Width":            3.4,
+"Petal.Length":            1.5,
+"Petal.Width":            0.2,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":              5,
+"Sepal.Width":            3.5,
+"Petal.Length":            1.3,
+"Petal.Width":            0.3,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            4.5,
+"Sepal.Width":            2.3,
+"Petal.Length":            1.3,
+"Petal.Width":            0.3,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            4.4,
+"Sepal.Width":            3.2,
+"Petal.Length":            1.3,
+"Petal.Width":            0.2,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":              5,
+"Sepal.Width":            3.5,
+"Petal.Length":            1.6,
+"Petal.Width":            0.6,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            5.1,
+"Sepal.Width":            3.8,
+"Petal.Length":            1.9,
+"Petal.Width":            0.4,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            4.8,
+"Sepal.Width":              3,
+"Petal.Length":            1.4,
+"Petal.Width":            0.3,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            5.1,
+"Sepal.Width":            3.8,
+"Petal.Length":            1.6,
+"Petal.Width":            0.2,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            4.6,
+"Sepal.Width":            3.2,
+"Petal.Length":            1.4,
+"Petal.Width":            0.2,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":            5.3,
+"Sepal.Width":            3.7,
+"Petal.Length":            1.5,
+"Petal.Width":            0.2,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":              5,
+"Sepal.Width":            3.3,
+"Petal.Length":            1.4,
+"Petal.Width":            0.2,
+"Species": "setosa" 
+},
+{
+ "Sepal.Length":              7,
+"Sepal.Width":            3.2,
+"Petal.Length":            4.7,
+"Petal.Width":            1.4,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            6.4,
+"Sepal.Width":            3.2,
+"Petal.Length":            4.5,
+"Petal.Width":            1.5,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            6.9,
+"Sepal.Width":            3.1,
+"Petal.Length":            4.9,
+"Petal.Width":            1.5,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            5.5,
+"Sepal.Width":            2.3,
+"Petal.Length":              4,
+"Petal.Width":            1.3,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            6.5,
+"Sepal.Width":            2.8,
+"Petal.Length":            4.6,
+"Petal.Width":            1.5,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            5.7,
+"Sepal.Width":            2.8,
+"Petal.Length":            4.5,
+"Petal.Width":            1.3,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            6.3,
+"Sepal.Width":            3.3,
+"Petal.Length":            4.7,
+"Petal.Width":            1.6,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            4.9,
+"Sepal.Width":            2.4,
+"Petal.Length":            3.3,
+"Petal.Width":              1,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            6.6,
+"Sepal.Width":            2.9,
+"Petal.Length":            4.6,
+"Petal.Width":            1.3,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            5.2,
+"Sepal.Width":            2.7,
+"Petal.Length":            3.9,
+"Petal.Width":            1.4,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":              5,
+"Sepal.Width":              2,
+"Petal.Length":            3.5,
+"Petal.Width":              1,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            5.9,
+"Sepal.Width":              3,
+"Petal.Length":            4.2,
+"Petal.Width":            1.5,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":              6,
+"Sepal.Width":            2.2,
+"Petal.Length":              4,
+"Petal.Width":              1,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            6.1,
+"Sepal.Width":            2.9,
+"Petal.Length":            4.7,
+"Petal.Width":            1.4,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            5.6,
+"Sepal.Width":            2.9,
+"Petal.Length":            3.6,
+"Petal.Width":            1.3,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            6.7,
+"Sepal.Width":            3.1,
+"Petal.Length":            4.4,
+"Petal.Width":            1.4,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            5.6,
+"Sepal.Width":              3,
+"Petal.Length":            4.5,
+"Petal.Width":            1.5,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            5.8,
+"Sepal.Width":            2.7,
+"Petal.Length":            4.1,
+"Petal.Width":              1,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            6.2,
+"Sepal.Width":            2.2,
+"Petal.Length":            4.5,
+"Petal.Width":            1.5,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            5.6,
+"Sepal.Width":            2.5,
+"Petal.Length":            3.9,
+"Petal.Width":            1.1,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            5.9,
+"Sepal.Width":            3.2,
+"Petal.Length":            4.8,
+"Petal.Width":            1.8,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            6.1,
+"Sepal.Width":            2.8,
+"Petal.Length":              4,
+"Petal.Width":            1.3,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            6.3,
+"Sepal.Width":            2.5,
+"Petal.Length":            4.9,
+"Petal.Width":            1.5,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            6.1,
+"Sepal.Width":            2.8,
+"Petal.Length":            4.7,
+"Petal.Width":            1.2,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            6.4,
+"Sepal.Width":            2.9,
+"Petal.Length":            4.3,
+"Petal.Width":            1.3,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            6.6,
+"Sepal.Width":              3,
+"Petal.Length":            4.4,
+"Petal.Width":            1.4,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            6.8,
+"Sepal.Width":            2.8,
+"Petal.Length":            4.8,
+"Petal.Width":            1.4,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            6.7,
+"Sepal.Width":              3,
+"Petal.Length":              5,
+"Petal.Width":            1.7,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":              6,
+"Sepal.Width":            2.9,
+"Petal.Length":            4.5,
+"Petal.Width":            1.5,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            5.7,
+"Sepal.Width":            2.6,
+"Petal.Length":            3.5,
+"Petal.Width":              1,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            5.5,
+"Sepal.Width":            2.4,
+"Petal.Length":            3.8,
+"Petal.Width":            1.1,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            5.5,
+"Sepal.Width":            2.4,
+"Petal.Length":            3.7,
+"Petal.Width":              1,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            5.8,
+"Sepal.Width":            2.7,
+"Petal.Length":            3.9,
+"Petal.Width":            1.2,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":              6,
+"Sepal.Width":            2.7,
+"Petal.Length":            5.1,
+"Petal.Width":            1.6,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            5.4,
+"Sepal.Width":              3,
+"Petal.Length":            4.5,
+"Petal.Width":            1.5,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":              6,
+"Sepal.Width":            3.4,
+"Petal.Length":            4.5,
+"Petal.Width":            1.6,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            6.7,
+"Sepal.Width":            3.1,
+"Petal.Length":            4.7,
+"Petal.Width":            1.5,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            6.3,
+"Sepal.Width":            2.3,
+"Petal.Length":            4.4,
+"Petal.Width":            1.3,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            5.6,
+"Sepal.Width":              3,
+"Petal.Length":            4.1,
+"Petal.Width":            1.3,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            5.5,
+"Sepal.Width":            2.5,
+"Petal.Length":              4,
+"Petal.Width":            1.3,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            5.5,
+"Sepal.Width":            2.6,
+"Petal.Length":            4.4,
+"Petal.Width":            1.2,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            6.1,
+"Sepal.Width":              3,
+"Petal.Length":            4.6,
+"Petal.Width":            1.4,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            5.8,
+"Sepal.Width":            2.6,
+"Petal.Length":              4,
+"Petal.Width":            1.2,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":              5,
+"Sepal.Width":            2.3,
+"Petal.Length":            3.3,
+"Petal.Width":              1,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            5.6,
+"Sepal.Width":            2.7,
+"Petal.Length":            4.2,
+"Petal.Width":            1.3,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            5.7,
+"Sepal.Width":              3,
+"Petal.Length":            4.2,
+"Petal.Width":            1.2,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            5.7,
+"Sepal.Width":            2.9,
+"Petal.Length":            4.2,
+"Petal.Width":            1.3,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            6.2,
+"Sepal.Width":            2.9,
+"Petal.Length":            4.3,
+"Petal.Width":            1.3,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            5.1,
+"Sepal.Width":            2.5,
+"Petal.Length":              3,
+"Petal.Width":            1.1,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            5.7,
+"Sepal.Width":            2.8,
+"Petal.Length":            4.1,
+"Petal.Width":            1.3,
+"Species": "versicolor" 
+},
+{
+ "Sepal.Length":            6.3,
+"Sepal.Width":            3.3,
+"Petal.Length":              6,
+"Petal.Width":            2.5,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            5.8,
+"Sepal.Width":            2.7,
+"Petal.Length":            5.1,
+"Petal.Width":            1.9,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            7.1,
+"Sepal.Width":              3,
+"Petal.Length":            5.9,
+"Petal.Width":            2.1,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            6.3,
+"Sepal.Width":            2.9,
+"Petal.Length":            5.6,
+"Petal.Width":            1.8,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            6.5,
+"Sepal.Width":              3,
+"Petal.Length":            5.8,
+"Petal.Width":            2.2,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            7.6,
+"Sepal.Width":              3,
+"Petal.Length":            6.6,
+"Petal.Width":            2.1,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            4.9,
+"Sepal.Width":            2.5,
+"Petal.Length":            4.5,
+"Petal.Width":            1.7,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            7.3,
+"Sepal.Width":            2.9,
+"Petal.Length":            6.3,
+"Petal.Width":            1.8,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            6.7,
+"Sepal.Width":            2.5,
+"Petal.Length":            5.8,
+"Petal.Width":            1.8,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            7.2,
+"Sepal.Width":            3.6,
+"Petal.Length":            6.1,
+"Petal.Width":            2.5,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            6.5,
+"Sepal.Width":            3.2,
+"Petal.Length":            5.1,
+"Petal.Width":              2,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            6.4,
+"Sepal.Width":            2.7,
+"Petal.Length":            5.3,
+"Petal.Width":            1.9,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            6.8,
+"Sepal.Width":              3,
+"Petal.Length":            5.5,
+"Petal.Width":            2.1,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            5.7,
+"Sepal.Width":            2.5,
+"Petal.Length":              5,
+"Petal.Width":              2,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            5.8,
+"Sepal.Width":            2.8,
+"Petal.Length":            5.1,
+"Petal.Width":            2.4,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            6.4,
+"Sepal.Width":            3.2,
+"Petal.Length":            5.3,
+"Petal.Width":            2.3,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            6.5,
+"Sepal.Width":              3,
+"Petal.Length":            5.5,
+"Petal.Width":            1.8,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            7.7,
+"Sepal.Width":            3.8,
+"Petal.Length":            6.7,
+"Petal.Width":            2.2,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            7.7,
+"Sepal.Width":            2.6,
+"Petal.Length":            6.9,
+"Petal.Width":            2.3,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":              6,
+"Sepal.Width":            2.2,
+"Petal.Length":              5,
+"Petal.Width":            1.5,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            6.9,
+"Sepal.Width":            3.2,
+"Petal.Length":            5.7,
+"Petal.Width":            2.3,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            5.6,
+"Sepal.Width":            2.8,
+"Petal.Length":            4.9,
+"Petal.Width":              2,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            7.7,
+"Sepal.Width":            2.8,
+"Petal.Length":            6.7,
+"Petal.Width":              2,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            6.3,
+"Sepal.Width":            2.7,
+"Petal.Length":            4.9,
+"Petal.Width":            1.8,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            6.7,
+"Sepal.Width":            3.3,
+"Petal.Length":            5.7,
+"Petal.Width":            2.1,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            7.2,
+"Sepal.Width":            3.2,
+"Petal.Length":              6,
+"Petal.Width":            1.8,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            6.2,
+"Sepal.Width":            2.8,
+"Petal.Length":            4.8,
+"Petal.Width":            1.8,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            6.1,
+"Sepal.Width":              3,
+"Petal.Length":            4.9,
+"Petal.Width":            1.8,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            6.4,
+"Sepal.Width":            2.8,
+"Petal.Length":            5.6,
+"Petal.Width":            2.1,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            7.2,
+"Sepal.Width":              3,
+"Petal.Length":            5.8,
+"Petal.Width":            1.6,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            7.4,
+"Sepal.Width":            2.8,
+"Petal.Length":            6.1,
+"Petal.Width":            1.9,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            7.9,
+"Sepal.Width":            3.8,
+"Petal.Length":            6.4,
+"Petal.Width":              2,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            6.4,
+"Sepal.Width":            2.8,
+"Petal.Length":            5.6,
+"Petal.Width":            2.2,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            6.3,
+"Sepal.Width":            2.8,
+"Petal.Length":            5.1,
+"Petal.Width":            1.5,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            6.1,
+"Sepal.Width":            2.6,
+"Petal.Length":            5.6,
+"Petal.Width":            1.4,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            7.7,
+"Sepal.Width":              3,
+"Petal.Length":            6.1,
+"Petal.Width":            2.3,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            6.3,
+"Sepal.Width":            3.4,
+"Petal.Length":            5.6,
+"Petal.Width":            2.4,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            6.4,
+"Sepal.Width":            3.1,
+"Petal.Length":            5.5,
+"Petal.Width":            1.8,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":              6,
+"Sepal.Width":              3,
+"Petal.Length":            4.8,
+"Petal.Width":            1.8,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            6.9,
+"Sepal.Width":            3.1,
+"Petal.Length":            5.4,
+"Petal.Width":            2.1,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            6.7,
+"Sepal.Width":            3.1,
+"Petal.Length":            5.6,
+"Petal.Width":            2.4,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            6.9,
+"Sepal.Width":            3.1,
+"Petal.Length":            5.1,
+"Petal.Width":            2.3,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            5.8,
+"Sepal.Width":            2.7,
+"Petal.Length":            5.1,
+"Petal.Width":            1.9,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            6.8,
+"Sepal.Width":            3.2,
+"Petal.Length":            5.9,
+"Petal.Width":            2.3,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            6.7,
+"Sepal.Width":            3.3,
+"Petal.Length":            5.7,
+"Petal.Width":            2.5,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            6.7,
+"Sepal.Width":              3,
+"Petal.Length":            5.2,
+"Petal.Width":            2.3,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            6.3,
+"Sepal.Width":            2.5,
+"Petal.Length":              5,
+"Petal.Width":            1.9,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            6.5,
+"Sepal.Width":              3,
+"Petal.Length":            5.2,
+"Petal.Width":              2,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            6.2,
+"Sepal.Width":            3.4,
+"Petal.Length":            5.4,
+"Petal.Width":            2.3,
+"Species": "virginica" 
+},
+{
+ "Sepal.Length":            5.9,
+"Sepal.Width":              3,
+"Petal.Length":            5.1,
+"Petal.Width":            1.8,
+"Species": "virginica" 
+} 
+]
+  
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus" || opts.type==="bulletChart")) {
+        var data = d3.nest()
+          .key(function(d){
+            //return opts.group === undefined ? 'main' : d[opts.group]
+            //instead of main would think a better default is opts.x
+            return opts.group === undefined ? opts.y : d[opts.group];
+          })
+          .entries(data);
+      }
+      
+      if (opts.disabled != undefined){
+        data.map(function(d, i){
+          d.disabled = opts.disabled[i]
+        })
+      }
+      
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .width(opts.width)
+          .height(opts.height)
+          
+        if (opts.type != "bulletChart"){
+          chart
+            .x(function(d) { return d[opts.x] })
+            .y(function(d) { return d[opts.y] })
+        }
+          
+         
+        
+          
+        
+
+        
+        
+        
+      
+       d3.select("#" + opts.id)
+        .append('svg')
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+    };
+</script>
 
   </article>
   <!-- Presenter Notes -->
@@ -79,7 +1200,7 @@
   </hgroup>
   <article data-timings="">
     <p>This are the histogram showing the distribution by features with respect to the Species.
-<img src="data:image/png;base64,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" alt="plot of chunk unnamed-chunk-4"> </p>
+<img src="assets/fig/unnamed-chunk-4-1.png" alt="plot of chunk unnamed-chunk-4"> </p>
 
   </article>
   <!-- Presenter Notes -->
@@ -92,7 +1213,7 @@
   <article data-timings="">
     <p>This is the model to predict the species of the flower. As shown in the schema of the decision tree, Petal.Width and Petal.Length are the 2 primary predictors.</p>
 
-<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfgAAAH4CAMAAACR9g9NAAACqVBMVEUAAAAAAA4AABgAABsAADAAADEAADIAADUAADoAAFYAAFoAAGAAAGYAIBgAICIAJ3kALDAALEMAMYYAOFoAOH4AOSIAOSsAOjoAOmYAOpAARpkATlQAWKoAYp8AZrYYAAAYADEYAFYYJ1YYJ3kYYpkYYrgbAAAbABsbADAbLEMbbmUrAAArADErAFYrJwArJ3krfNYsAAAsADUsAGAsMWAsMYYse84uAAAuABsuADAuLAAujHYzAAAzADIzAFozOH4zisE5AAA5AA45ABg5IBg5ICI5UCs5UDM6AAA6ADo6AGY6OgA6Ojo6OmY6OpA6ZmY6ZrY6kJA6kNs8JwA8JzE8RgA8fHk8ldZCLABCLBtCjENCqHZMRgBMrplMrtZQAABQADVQAGBQMQBQMYZQnO9TTgBTxFRTxHZcAABcADJcAFpcOABcYjFcrplcrrhcrtZcr+BjbhtjxFRjxHZlAABlAA5lABhlIABlIA5lZDxmAABmADpmAGZmOgBmOpBmZgBmZmZmZrZmkNtmtv9rfFZrlXlrrplrrrhrrtZvMQBvMTVvMWBvWABvnIZvvO90jDB0qEN0xFR0xGV0xHaAOACAODKAr36A0uCNWACN26qN2++PIACPIA6POQCPZCKPeTyQOgCQOjqQOmaQZgCQZpCQkDqQkLaQtpCQ29uQ2/+jYgCj9Z+j9eCqezWq26qq286q2++1OQC1eSK1jSu1jTy2ZgC2Zjq2Zma225C2/9u2//++vr7FijLF9Z/F9eDGnGDGvIbG26rG287G2+/KysraUA7aeSLajSvajTPajTzbkDrbkGbbtmbb25Db/7bb/9vb///e3t7lr1rl0n7l9Z/l9cHl9eDs7Oz4+Pj9ZBj9eSL9jSv9jTP9jTz/tmb/25D//7b//9v///9He1DgAAAACXBIWXMAAAsSAAALEgHS3X78AAAZpklEQVR4nO2dj58c5V3HH6jUYK/4mzYULlZMtalVsBJEqg1ivAMR6YkFJdJWg2CNlgil5gKUdglcq/IrKDFgc8Uf7cVGG2VbuI0lcHvWbMXe8iN7CWRvb/4Sv9/neebH/pi93Z25nXn2+3m/kpuZZ2Znn533fp/vM8/szioPiERlXQGQDRAvFIgXCsQLBeKFAvFCgXihQLxQIF4oEC8UiBcKxAsF4oUC8UKBeKFAvFAgXigQLxSIFwrECwXihQLxQoF4oUC8UCBeKBAvFIgXCsQLBeKFAvFCgXihQLxQIF4oEC8UiBcKxAsF4oUC8UKBeKFAvFAgXigQLxSIFwrECwXihQLxQoF4oUC8UCBeKBAvFIgXCsQLBeKFAvFCgXihQLxQIF4oEC8UiBcKxAsF4oUC8UKBeKFAvFAgXigQLxSIFwrECwXihQLxQoF4oYyqeBWQdU1yyogel/BlqWUiw5rkldEXX61WazDfxuiLL5VKVYhvY5TFV8Y9iI9jdMU3pq8reBAfx+iK97xvznkQH8cIi199dt6D+DhGWHzj83oO4jsywuJXvqDnIL4jzotXg5F1tTPH8SOg1MnBEK/e5devBtZu1Isey3VYfBLrUO+u+MTeWb3cYXzZ4tl8LesXkg3SxZfLQs07K76799d+9eu9mxfZ2osXXyrLzPOuim/3/qpSP0C2X7+DJuGfoPy1Dyt1ZyfxZB7i3aFN/Ouf+vrJYxedPHl4G0844mnu1R/7ti1//U+e6tgMiB3RHR3xZNZOyDU5ZuO0ZMv990ZH8RK7dyMjntvytz/FLb2iKYnn+H7jb5+y5dQUmCa/g/gyxLtDx76dbdlP6s6djXi//I47Y5t6iHeINvEkV/83mT3M8bacC177lacg3mdkxPtNObX11LK/8WTQq7flx5T60T9t79ZDvGOkMm4H8e4B8QmBeIh3CohPCMRDvFNAfEJcF28vwbzaMizXczHEO4YVz+My9poMX6Hx6b0Y4h1DNes82X4JvrdiiHeMiHgbvNHQ7r0Y4h0jEP/ah/W1Nzs52W8xxDtGJOIjV+Kj9FYM8Y4RPZ07fGd00l8xxDuGFc8XXSl47SSQ23sxxDsGi9enZUp/vsZOTB7vpxjiHQMjdwmBeIh3CohPCMRDvFNAfEJGTLwegn/9DkUnbP7kMP9948kOX5+CeAfpLP5VvtzKko9d5E9e+8i3+XPWF3XcHuKdo6P4w2//O4p4/iaF/UIFTUj5sW38jRqIb2KkxJumnmKcB+bCyeFtrZfoIH4UxbcMzFKO/69P/esdahvER3FVfIz59ojn0mPbjm1rvUoH8Y4SL745x5/UX48+fGdMmod414gX/8aT20yvfpv9nM0xmomJePYO8W7R0XyH83jT9MfkeIh3j1RucFiCeOeoJTdvvEO8W9TKSc1b77gHjlvUyHyyu1eXfPG465VT1Mql0oA/U8CUAu8Q7xa1armUAjLvb+iyeDKfineRdzR1WvxyNXHMl6V6d1v8MrX25QTuy3zTcpnenRbvcde+Vk1ATejN6j3nxYNBgXihQLxQ8iI+dz8Jmbf6pE1eXkhcPbKqX5zhvByvxOTlheROfJ/lzpGXF7LmgW5Mc0M7FaxYucGfq6uCXj8ev3faeGVyqr28TrssBPPRDSB+SPQgnsQWN8xFFw1ri+d1LeKL/Bguq9hdrs5CfBb0Jp5NrUyqDXOkSW1cqug2oFm8Xk1/f3uSRVbUht8ce4E3fmXyuqDB4EeHgW7mKu+ahPgM4Ho07l/yilNkbmyejBlLbeLZfXFsXgfxNXM82yTerl6Z3Pi9WZ5MNabtxqbEM0lDz2hsxK9c89UO4nV+Kdg3U6R8BMjudKn5P09Wn51fuf7/7p336uM027iX5Sh/G7+pZ1Gk2nimHL1hrkm8XW3985L/LjElXqDaUFf6Yauz4zYXROrDb6OCVyk09tI+bSJRLfV2lrzUXdfjm1/7yhz3t0iG33K3dO4K3BRwA29cjs0XW8Wb1RHxlVbx0YindmBJP2zD3EqHiGfdxUJ9KuxLth6vvBy/vsnL6ZJerjww7tX14a9M2Rhrbuq9IF550cZzW8R7QYvfMeIjOb4xbbxzgX6/tdSPKrNK78Vx2qDQud7OkpcXoutRJzHsYMMcRaUx2Cbe9sS1eG7xdcQHbb+/Okj1kRwfivdsr351Vj+Jeed0inh6/1HG4SpNNZWPAHl5ISbiC53LmeB0zZ57F5XurT+grWvxyvbxTXfMaK6osc/RhDZ+vll8sCulH+11Fh9Tz1EgLy9ExZyJJ69f0bTm/denp/K8HL++yVWO77BZsvrReZiK9uH7AGP1QyJvF8NwdQ6MJBCfDGePX15yPBgyECAUiBcKxCfD2eOHHC8UCBAKxAsF4pPh7PFDjhcKBAgF4oUC8clw9vghxwsFAoQC8UKB+GQ4e/yQ44UCAUKBeKFAfDKcPX7I8UKBAKFAvFAgPhnOHj/keKFAgFAgXigQnwxnjx9yvFAgQCgQLxSIT4azxw85XigQIBSIFwrEJ8PZ44ccLxQIEArECwXik+Hs8UOOFwoECAXihQLxyXD2+CHHCwUChALxQoH4ZDh7/JDjhQIBg+P079Q4WemcoNpmHMLFOueFUHyNWM6yKv2DHD84ofhyuVytZVmV/hkFAVmh+IdO+dcxValUKkO8GJS3+i/et+YhXhqKf8OUf48Y4vP/vGnCr6Fx/xLES0N5351bucGDeGkoaun1b1VDvCzC0zmIz/3zDkDcD4r3QNZV70Ke65YLlFoYnByrz2/N8kES7Vp9XodyIb4rSb2z+Vousz9yfDeSeyfz5VxewHFDQFakIZ7MV3NoHuK7kIr3BVXKo3mI78Ia4o9/6GDX5aj55byZR47vQp8RHy++VK1CvDv43o9f9o2Fl7/0yEsfV+84uHD8F//wHQdfVHqWRFPh9z+yYFeZZX+jqPgSxDuEL56ks/wDWxeOXLhw/NKdCy998qCe/dDBl7+4c+HFH+FV9JfF2znaaKFZfN7O6SA+nqClP0LKt770iUfYuA5rmjVNu2nd+Y1AZbQQzrWIz91QPnJ8PIH445f9u27pFTXr2unxS7mBZ/GUBUxyp2bBvhHMHMS7SyD+5S/9zWXf4GCO9OBM046IH0XCTv0RtXVhIUzkNLGznONp0pbjId5lQvHHf4GSuunAa6cH1urVQ3zenrcf0hm4g3jngHihQLxQIH6EnrcfIF4ovnjqqdP5mz8JOKJ0337tYoh3DCuez9WPXOhPQg7sjKztVgzxjmHF82icHZSLnp/zpZtwbbdiiM/B8/aDFc/j8TwMayaBYT12v3Ohh2KIdwwrngdoyaGdBIZ5NI/Cu4diiHeM7hFvE3oPxRDvGN1zvDXcQzHE5+B5+yHo1W81vfqtTd13bsxf/quDPRRDvGOweHvFrfU8nouP8OcyeimGeMfAyJ1QIH6EnrcfIF4oEC8UiBcKxI/Q8/ZDnPiXv8gnbEf0XW52Lhzg0za+GAfxo0Kc+AP6a1M8x5+k1t+tevHCmG0h3kFixNtvVvDcJx5h5Ue22muxED8axIg/ftlf67G5BT0mqyP+SLeAh/g8PG8/xIm/1Fxut1ffKMf/2yf//uP8XRuIHxE6mw+uuL7oD8Yf2Wq+TAvxI0Jn8S/9kRV/wAY5Jf0DO7ukeYh3js7mD+z0b5LhB/xCt4hn7xCf9fP2R0zI6y9GBh+w0U1/lxwP8e6Ryg0OSxDvHLXE5pXxjnvguEWtqhLevbpkwV2vMn7e/liulUulgdWH2vkOh1m/lhbcEJAZtTKZLw34MwWliPfc3dMU4rtS45BPTLmcO+8QvwZpmCfveevaIcevSa1WTeq9mkPv7gjIjOVatVoenGo1f/mdgXihQLxQkOOFAgFCgXihQLxQkOOFAgHNNKZ5lH0qWNa/D6+pq4Lnrc6OzZsfD29Mb/xfLvG8IhfdQKVTHfanH2AervRPjucFiG+mMT1OKgNFetGgxetV9XffN0We/TUknjdrEV8smMcrI563KNr3QC6A+Ga0aXa4MkkRujqr1Malim4DjHj+WxkvjvOMnldjnxt7gTd7ZfK6oKngxxU8034Y27zLSp5CXnaOV6Yikf++eBblh/I1czxrxFP56myhTu+GDXNUQouNaT/iN37PtOuh7sb9tiga8arD/+GTDwH5wW/qOTpJrGnqdX424ldnxxt751aunS9uXKIS3izS1Bu10cgOcnzQ6OcEiG/GdO64CdedPGN0bL7oi/eKG1+5dr6x92uzurVnx5VW8WHEh+LR1OccvzdnJfGijWorvj72z9wmfHS64MVFfJjjQ/EVVbC9hJwgPse34Iu3EarFc4uvI57NUaePenCVd12jU0FTjp+K9tuLEfFmw7iIR47PA8H5W123+F5R6T77A9o6i6dgLvDajUte0Kuf582ebxZv8cX7+8sNEC8UiBcKcnzmIMeDIQLxQoF4oSDHZw5yPBgiEC8UiBcKcnzmIMeDIQLxQoF4oSDHZw5yPBgiEC8UiBcKcnzmIMeDIQLxQoF4oSDHZw5yPBgiEC8UiBcKcnzmIMeDIQLxQoF4oSDHZw5yPBgiEC8UiBcKcnzmIMeDIQLxQoF4oSDHZw5yPBgiEC8UiBcKcnzmIMeDIQLxQoF4oSDHZw5yPBgiEC8UiBcKcnzmIMeDIQLxQoF4oSDHZw5yPBgiEC8UiBcKcnzmIMeDIQLxQoF4oSDHZw5yPBgiEC8UiBcKcnzmIMeDIQLxQoF4oSDHZw5yPBgiEC8UiBcKcnzmIMeDIQLxQoF4oSDHZw5yPBgiEC+UDMSrkOE/eYda5KISQ69FFuLDuWVi+BVoroWuREa1yPBQZCu+Wq3Wsj7mXIlqLeNKDP9QZCu+VCpVMxdPlShnL37YhyIj8RU17mUvvq7G5rMW35hWG+bEiG/cv/St+czF0zGfykHENz7viRHveav/tJS5+JUb6A2YvXgOATHiG3vnvMzF1wv89sta/MoX9JwM8Y175/VcxuKnVm7Ivqn/7pyekyG+rji7Zi2+Me13qzIUr3PeSIlXSci+ImnWYOBKrGNYrtOuqc77k5Daa6YdzQxEqkddqTODsX7q12XHCa377pOPYQ5q3XefyiiqGli7Ub8+Y7nrID4V7WmoT6Y9LfVJrK+j+vTFp6WdzScavk6snc1Xk/a4Entn9eswjJ9r8WQ+weWTNMTPJKqBl453bT7t846ciy+VBz/u6YhPUgMvNfHlctrmUxe/tvfHfub2YZhfy/u+997adTkV8+3eT1/9XMel5vJO5tNt7XMvvjToe73fgI8VP3ANvLQCnsTz2y9V88MR/6hS30e2H7+cJuGfoPyx9yl1Zaz4AYfVfPH7Lv70zMM33vTQB9S5t87s+8mfO/fWB5WeJdFUeM5NM3aVWfY3iooffGAvKv709hNn3nrmy1c/d/rXP3v2c2/erd75l4cozk9v/wel9uiIp7KzDp05fRUvt4on8+6Jf/yK2/fvfs/+/bdt4QlHPM09+sN32fLHf+mW2GZADTye6osn6Sx/x+aZXRfM7Nt0ycxDH7xVz7731od/55KZB3+QV9FfFm/naKOWkB/4aETkvfUMSd3+36T6KvJ6dOLMqbO0+Kto7rwTNPfW03to7jufOdTe7qc/ojsc8WTWTsg1OWbjtGTL/ffG+oif2UXKNz/0szexcR3WNGuadtO68xuBymghnGsRXx34aETtLU7QP1bNwX3Pc/xOsEtmEurmte3iU+3eDaepp7b8bbdwS69oSuI5vp/4vVtsOTUFpsnvLL6UUPy+i/9ct/SKmnXtdN8mbuBZPGUBk9ypWbBvBDPXLL6UjvjT2/8nVK3b/RbxVMYcVersDuLTvZI0tM6dbdn3686djXi//PIruzX1ScU/fOPHLv40B3OkB2ea9l4jPiXxlOC3n1gz4t+8e0/npt5B8SRX/zeZPczxtpwLHvvpWzo8MBXxM7vU5pmZMJHTxM5yjqdJW45fJ/FnFtXEGV9wmOMD8ZzjT1/9H7z8a4dGQrzflFNbTy37EzcHvXpbvlupH/rl2G59YvH7foKSuunAa6c71urVr5d49umLpx78j7dEvO3VLyr1zs/uGQ3xg5OG+GSkKL6F7mM2ED+S4t96WnF0Q7w08X0C8X1UBOK71izNnekdQny0EhAP8TLE+wMydN5GJ+v+JKDn4uTi6RSNTtz9ScC+TercpjGdpq2DtSmJpxO1804EkwC73HpZhpZ56M5OnBL/qB2CfeLmK/kyjJ0E9F6cWDwP0uy6wJ9EBNMyK35QnRsRbzcL1qYknodmFs/3JwF2+U2+LBMZsuGxu8XzTnDxon2fuCL+trf9vol4Hpu1Q7TRQdneixOL52FYOxobjW0epuerNTvO+Vg04u1m/tq0xPMALZ2120lo2Cyf4vfC0TDkecyerOuJvVrjivigqX/s/XfxoLydBIZ7L04s3jqMqoyKb2nqO2ydhvioys8cajWs3wPtxS5GfCCeR+PJoZ0EhnsvTiyeR+bJoZ00N/XntIm3m4Vr0xF/6jyt0k4Cw+HyW09PRDM/NfVnHYr2CJwTn9uI5+7bT90YF/Hh2uFE/Jt3R7zrXt1vPHOI0/6psx1t6nOb4/1VLeIjm9kLuUPI8Wf0R3KaoVXR9sE58U/cvMX007e0dN97LU6hV7/Z9Oo3N/fqKazNcpN4u1m4Nq1e/YTp1U+09Or1cqt3ndzPP+NuxPP/DifsfRUnE28vtbaex+ur8souh+IjWwdrUxBvL7i2nseHxYv6i7F7wuJTSm92KryO4474tMDIHcT3WxGI71qzNHemdwjx0UpAPMRDPMQLE2+/MGUnt3HPna/HDFm8+QIVnbjx5yxndnDvnS/NDFf8Kf+j8+YTt9yJ5ys2oymez9fsN6h48v67+DPW74ndfJ3E8zkbn6Lv0N+eMt+tevCCztuum3jWrU/oT7H/09tP8Ietz++8rfvifflmQsp3b+Fv0ww74o18Oy5HyndtfvjGm+K3XbemnuUfPevLfNp+/pnFCf5m3QiLtwNyfsTvXivg10c8f2Xy4t/Vn7PniN/VLeDXTbwZwrNfpzo6sdgt4F0X/9j79DflzIRy/F9c8ceXqy3DFr9vExvfdIm+IkM5/s8++Acf4O/aDFX86avMoJyf479zz3/erSbitnZdfNP3Zjnwt+zeEr0619l7+hHffLVu12bzZdp47+sS8eb6i3/NZnFicSJ64W7UxO+/7cpw8vgVt992Zfc0vz7iqWf30M/74inb77gkPs2vm3jzmRsr/s17nju6p0uad1p828csdm/Zv0bE66Oernj/Exk7TFMf+fp8vPfUxYdXXK14/dX5+IjXtci5+C7mdyv9bXg7MR+76J7jk4iPM79L6RN48/1I+9GL+ByfUHyc+UX/wpsRrz+R0SXHOy6+b8xRT1l8X9gaDC5+OZUbHJZcEL+cnvlkL3g5BfO2BoOL92rJzdt3X+7FV9O6mW3CF8wVSSfgkxzyWjmpeVuJvN/8yFterpbSuXu1PeoDi+eKJNKetAa6FmQ+2d2rrfe83+6MI61cGvC+/FFK/gse+PaCSSuSvAZMrZyoFn4lSnm/wSG/x+mAp8fgd/lKqyLJ7jNWq6VSidzf0tTTrVsaL9WQ5KinU5Gk95erVVOoRP5vYszUuHlLhWS3jk6jIglr4KXS8KR/8+p1+k0aPuCpkPT1Jq9ICveTZPMZH4d21unHbmppkX1FUjgay7moRTMZ/O4cyAMQLxSIFwrECwXihQLxQoF4oUC8UCBeKBAvFIgXCsQLBeKFAvFCgXihQLxQIF4oEC8UiBcKxAsF4oUC8UKBeKFAvFAgXigQLxSIFwrECwXihQLxQoF4oUC8UCBeKBAvFIgXCsQLBeKFAvFCgXihQLxQIF4oEC8UiBcKxAsF4oUC8UKBeKFAvFAgXigQLxSIFwrECwXihQLxQoF4oUC8UCBeKBAvFDfEr0zyT6mPzQfL186bfy3bFDyvMa02LtltPK8SfVjz9i2PC1fbPQQ78regid2V3Ws9WqXY/bc+TU5wRLw+pBUroqP4xt45b+WaudXZglcZp+W6llIstO2lBfs4/wGeZ/cQ7Mjfgie2BsXgjWK26Lb/1qfJCy6J5786cCgYOeaep2WaNb7qrKBYaNw7r7crbvgq/V39ylzzXvQuaHL9P/rxZx9nH0DYPdgJ/bNbrFy/xOuoILJX61rXIvzjrfzWfWPP2+cwoe4/TW5wSTzFmw4cP9y14KlI1NFarWfvnH2MfocUInvxxU9OefWg/Yg8gCdmD+GO7BZhxEf2ap/b1CKsz8pkwbPPYWscPk1OcES8zvHWlAk784+PJcemZnXW6Aw9cuMaxmdEvJl44eO8QLzdQ7gjf4uw9+DvdWVyg97A1iKsj7//lbARCZ4mJzging5g3RzkIveoQvEcfGYFiZkK4tWLZNxigR4z7nUQb8r147xuEW/2TLrrYWfONNtmC1uLsD5N4oumD+g/TU5wR7xXGeO2u9DU1AfR7unmNcjQXpP4cC8dIt48LnxAc44Pt2hqAoK9Fv0nNTsI5/z/tsbh0+QEh8Svzo777XdTjjfJ2h5Ybk9N4tWtBK1afZZdsDKbcStjUfGhEFtg9xDZkdkijHi718g7wdQirE9EvF/jnHl3SbzuLtEp9LvvK6zOjr0w6/fqTUvP59bc5Wo7j7eJoG7mqOCj90bF+4+LOY+nQn8Lswd9EhfsK8gyPEe1mjdz0abe1Dh8mpzghniQOhAvFIgXCsQL5f8B0Yp0KuWVfMUAAAAASUVORK5CYII=" alt="plot of chunk unnamed-chunk-6"> </p>
+<p><img src="assets/fig/unnamed-chunk-6-1.png" alt="plot of chunk unnamed-chunk-6"> </p>
 
   </article>
   <!-- Presenter Notes -->
@@ -137,7 +1258,7 @@
   <!-- Load Javascripts for Widgets -->
   
   <!-- LOAD HIGHLIGHTER JS FILES -->
-  <script src="http://slidifylibraries2.googlecode.com/git/inst/libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
   <!-- DONE LOADING HIGHLIGHTER JS FILES -->
    

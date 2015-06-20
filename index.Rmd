@@ -7,7 +7,8 @@ framework   : io2012   # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : []   # {mathjax, quiz, bootstrap}
-mode        : standalone # {standalone, draft}
+ext_widgets: {rCharts: libraries/nvd3}
+mode        : selfcontained # {standalone, draft}
 ---
 
 ## Data set
@@ -22,13 +23,15 @@ iris[1:5,]
 
 --- .class #id 
 ## Data Exploration
+
 This is a scatter plot showing the general distribution of the data.
-```{r,echo=FALSE}
+```{r,echo=FALSE, results = 'asis',cache=TRUE}
 require(rCharts)
+require(slidify)
+require(slidifyLibraries)
 n1 <- nPlot(Petal.Length~Petal.Width, group = 'Species', data = iris, type = 'scatterChart')
-n1$save("chart1.html")
+n1$show("inline")
 ```
-<iframe src=chart1.html seamless></iframe>
 
 --- 
 
